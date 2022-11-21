@@ -28,7 +28,11 @@
         <nav class="navigation">
           <ul class="navigation-list list-killer">
             <li class="navigation-list-item">
-              <a href="./index.html" class="navigation-link-studio links underscore">Студія</a>
+              <a
+                href="./index.html"
+                class="navigation-link-studio links underscore"
+                >Студія</a
+              >
             </li>
             <li class="navigation-list-item">
               <a href="./portfolio.html" class="navigation-link-portfolio links"
@@ -70,7 +74,9 @@
             ВАШОГО БІЗНЕСУ
           </h1>
 
-          <button type="button" class="order-btn" data-modal-open>Замовити послугу</button>
+          <button type="button" class="order-btn" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- переваги -->
@@ -147,10 +153,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="description">
-                  ДЕСКТОПНІ ДОДАТКИ
-                  
-                </h3>
+                <h3 class="description">ДЕСКТОПНІ ДОДАТКИ</h3>
               </div>
             </li>
 
@@ -163,10 +166,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="description">
-                  МОБІЛЬНІ ДОДАТКИ
-
-                </h3>
+                <h3 class="description">МОБІЛЬНІ ДОДАТКИ</h3>
               </div>
             </li>
 
@@ -179,10 +179,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="description">
-                  ДИЗАЙНЕРСЬКІ-РІШЕННЯ
-                  
-                </h3>
+                <h3 class="description">ДИЗАЙНЕРСЬКІ-РІШЕННЯ</h3>
               </div>
             </li>
           </ul>
@@ -407,6 +404,7 @@
           </ul>
         </div>
       </section>
+      <!-- постійні клієнти -->
       <section class="section">
         <div class="container">
           <h2 class="regular-customers">Постійні клієнти</h2>
@@ -457,6 +455,7 @@
         </div>
       </section>
     </main>
+    <!-- Футер -->
     <footer class="footer">
       <div class="container">
         <div class="adress-div">
@@ -525,15 +524,42 @@
         </div>
       </div>
     </footer>
+    <!-- модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal ">
+      <div class="modal">
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <form name="order-form" class="form">
+
+          <label for="username" class="form-text">Ім'я</label>
+          <input type="text" name="username" id="username" />
+
+          <label for="tel" class="form-text">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+
+          <label for="email" class="form-text">Пошта</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="comment" class="form-text">Коментар</label>
+          <textarea name="comment" id="comment" rows="8" class="order-textarea" placeholder="Введіть текст"></textarea>
+
+          <div class="checkbox">
+            <input type="checkbox" name="policy" />
+            <label name="policy" class="policy-text"
+              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+  
+          </div>
+          <button type="submit" class="order-form-btn">Відправити</button>
+        </form>
+        
+
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close" width="11px" height="11px">
             <use href="./images/Sprite/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
-
     </div>
     <script src="./js/modal.js"></script>
   </body>
