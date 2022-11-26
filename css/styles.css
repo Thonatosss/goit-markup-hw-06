@@ -748,13 +748,11 @@ textarea {
   pointer-events: none;
 }
 /* Форма */
-.icon-close{
+.icon-close {
   position: absolute;
   right: 17px;
   top: 17px;
-  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover + .icon-close,
 .modal-close:focus + .icon-close {
@@ -901,7 +899,11 @@ textarea {
 .modal-check:focus + .policy-text span {
   border-color: #2196f3;
 }
+.policy-link {
+  text-decoration-line: underline;
 
+  color: #2196f3;
+}
 
 /* розсилка */
 .newsletter-label {
@@ -947,7 +949,7 @@ textarea {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .newsletter-btn-icon {
   fill: var(--primary-white-color);
@@ -956,4 +958,5 @@ textarea {
 .newsletter-btn:hover,
 .newsletter-btn:focus {
   background-color: #188ce8;
+  
 }
