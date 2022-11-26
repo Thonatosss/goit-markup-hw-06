@@ -546,16 +546,40 @@
         <form name="order-form" class="form">
 
           <label for="username" class="form-text">Ім'я</label>
-          <input type="text" name="username" id="username" class="input" />
+          <div class="input-wrapper">
+            <input type="text" name="username" id="username" class="input" required />
+            <svg class="icon-person input-icon" width="12px" height="12px">
+              <use href="./images/Sprite/icons.svg#icon-person">
+
+              </use>
+            </svg>
+          </div>
+          
 
           <label for="tel" class="form-text">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="input" />
+          <div class="input-wrapper">
+            <input type="tel" name="tel" id="tel" class="input" required />
+            <svg class="icon-person input-icon" width="13px" height="13px">
+              <use href="./images/Sprite/icons.svg#icon-phone">
+
+              </use>
+            </svg>
+          </div>
+          
 
           <label for="email" class="form-text">Пошта</label>
-          <input type="email" name="email" id="email" class="input" />
+          <div class="input-wrapper">
+            <input type="email" name="email" id="email" class="input" />
+            <svg class="icon-person input-icon" width="15px" height="12px">
+              <use href="./images/Sprite/icons.svg#icon-mail">
+
+              </use>
+            </svg>
+          </div>
+          
 
           <label for="comment" class="form-text">Коментар</label>
-          <textarea name="comment" id="comment" rows="8" class="order-textarea" placeholder="Введіть текст"></textarea>
+          <textarea name="comment" id="comment"class="order-textarea" placeholder="Введіть текст"></textarea>
 
           <div class="checkbox">
             <input type="checkbox" name="policy" id="policy" class="modal-check hide" />
@@ -577,10 +601,11 @@
         
 
         <button type="button" class="modal-close" data-modal-close>
-          <svg class="icon-close" width="11px" height="11px">
-            <use href="./images/Sprite/icons.svg#icon-close"></use>
-          </svg>
+          
         </button>
+        <svg class="icon-close" width="11px" height="11px">
+          <use href="./images/Sprite/icons.svg#icon-close"></use>
+        </svg>
       </div>
     </div>
     <script src="./js/modal.js"></script>
