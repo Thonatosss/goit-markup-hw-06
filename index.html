@@ -527,7 +527,7 @@
           <div class="newsletter-input-btn">
             <input type="email" name="email" id="email" class="newsletter-input" placeholder="E-mail" >
             <button type="submit" class="newsletter-btn">Підписатися
-              <svg class="newsletter-btn-icon" width="24" height="24px">
+              <svg class="newsletter-btn-icon" width="24px" height="24px">
                 <use href="./images/Sprite/icons.svg#icon-send">
 
                 </use>
@@ -546,22 +546,30 @@
         <form name="order-form" class="form">
 
           <label for="username" class="form-text">Ім'я</label>
-          <input type="text" name="username" id="username" />
+          <input type="text" name="username" id="username" class="input" />
 
           <label for="tel" class="form-text">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
+          <input type="tel" name="tel" id="tel" class="input" />
 
           <label for="email" class="form-text">Пошта</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" class="input" />
 
           <label for="comment" class="form-text">Коментар</label>
           <textarea name="comment" id="comment" rows="8" class="order-textarea" placeholder="Введіть текст"></textarea>
 
           <div class="checkbox">
-            <input type="checkbox" name="policy" />
-            <label name="policy" class="policy-text"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
-            >
+            <input type="checkbox" name="policy" id="policy" class="modal-check hide" />
+            <label for="policy"name="policy" class="policy-text">
+
+              <span class="policy-icon">
+                <svg class="policy-icon" width="16px" height="15px">
+                  <use href="./images/Sprite/icons.svg#icon-policy">
+  
+                  </use>
+                </svg>
+              </span>
+
+              Погоджуюся з розсилкою та приймаю Умови договору</label>
   
           </div>
           <button type="submit" class="order-form-btn">Відправити</button>
